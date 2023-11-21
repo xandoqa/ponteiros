@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int inteiro = 10;
+    float real = 5.5;
+    char caractere = 'A';
+
+    int *pInteiro = &inteiro;
+    float *pReal = &real;
+    char *pCaractere = &caractere;
+
+    printf("Valores antes da modificação:\n");
+    printf("Inteiro: %d\nReal: %.2f\nCaractere: %c\n", inteiro, real, caractere);
+
+    *pInteiro = 20;
+    *pReal = 8.8;
+    *pCaractere = 'B';
+
+    printf("\nValores após a modificação:\n");
+    printf("Inteiro: %d\nReal: %.2f\nCaractere: %c\n", inteiro, real, caractere);
+
+  
+}
